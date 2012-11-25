@@ -1,4 +1,4 @@
-module.exports = exports = patch
+exports.patch = patch;
 
 exports.deep = require('./deep');
 exports.Date = require('./date');
