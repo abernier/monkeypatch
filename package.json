@@ -1,5 +1,9 @@
 {
   "name": "monkeypatch",
   "version": "0.0.1",
-  "main": "index.js"
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:abernier/monkeypatch.git"
+  }
 }
