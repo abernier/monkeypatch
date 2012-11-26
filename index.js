@@ -1,11 +1,3 @@
-exports.patch = patch;
-
-exports.deep = deep;
-exports.Date = date;
-exports.Object = object;
-exports.Array = array;
-exports.String = string;
-
 function patch(Object, Date, Array, String) {
   if (!Date.parse || isNaN(Date.parse("2010-12-29T07:31:06Z"))) {
     Date.parse = this.Date.parse
@@ -191,3 +183,11 @@ var string = {
     return this.replace(/^\s+|\s+$/g, "")
   }
 };
+
+exports.patch = patch;
+
+exports.deep = deep;
+exports.Date = date;
+exports.Object = object;
+exports.Array = array;
+exports.String = string;
